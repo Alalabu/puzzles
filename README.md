@@ -1,7 +1,7 @@
 ## Puzzles
-<div>
+
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/logo-write.jpg)
-</div>
+
 puzzles 是一个用于 **动态** 将多个图片、文本或形状，合并成一个图片的工具。在使用 puzzles 的过程中，**你不需要安装任何第三方工具**便可以直接使用，只要调用相应的函数，便可以将你所需要的操作发送至专门用于拼接图片的云端服务器。在拼接完成后，会将合并好的图片以 `Buffer` 或 `base64` 的数据方式返回给你。
 
 ## 一个简单的Demo
