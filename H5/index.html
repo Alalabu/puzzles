@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Puzzles H5 Example</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	</head>
+	<body>
+		<img id="example" />
+		
+		<script src="js/puzzles.0.0.1.min.js"></script>
+		<script type="text/javascript">
+			
+			var puzz = new Puzz();
+			// 为拼图添加一个纯色或图片背景(此处为纯色背景)
+			puzz.drawBackground({width: 200, height: 300, bgcolor: '#DD5145'});
+			// 添加绘制一个图片
+			puzz.drawImage({
+				width: 100, height: 100, left: 50, top: 50, 
+				imgurl: 'https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/js-logo.jpg',
+			});
+			// 添加绘制一段文字
+			puzz.drawText({top: 170, left: 30, text: 'I love code!', color: '#FFF', fontsize: 25, family: 'msyh'});
+			// 获取渲染结果
+			puzz.render((err, res) => {
+				const imgData = res.data;
+				// 页面调用过程中返回数据为base64数据格式,可直接赋值于 img 标签的 src 属性
+				document.getElementById('example').src = imgData;
+			});
+		</script>
+	</body>
+</html>

@@ -19,13 +19,13 @@ puzzles 是一个用于 **动态** 将多个图片、文本或形状，合并成
 	puzz.drawBackground({width: 200, height: 300, bgcolor: '#DD5145'});
 	// 添加绘制一个图片
 	puzz.drawImage({
-		width: 100, height: 100, x: 50, y: 50, 
+		width: 100, height: 100, left: 50, top: 50, 
 		imgurl: 'https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/js-logo.jpg',
 	});
 	// 添加绘制一段文字
 	puzz.drawText({top: 170, left: 30, text: 'I love code!', color: '#FFF', fontsize: 25, family: 'msyh'});
 	// 获取渲染结果
-	puzz.render((res) => {
+	puzz.render((err, res) => {
 		const imgData = res.data;
 		// 页面调用过程中返回数据为base64数据格式,可直接赋值于 img 标签的 src 属性
 		document.getElementById('example').src = imgData;
@@ -90,7 +90,10 @@ const someFunc = async function(){
 - 4.渲染并得到返回结果。
 
 ## Install
+### NPM: 
 > npm install puzzles --save
+
+### H5: [Click Here](https://github.com/Alalabu/puzzles/tree/master/H5/js/puzzles.0.0.1.min.js)
 
 ## API
 ### constructor({dataType})
