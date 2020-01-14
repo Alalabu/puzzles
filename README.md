@@ -197,33 +197,33 @@ const someFunc = async function(){
 文本内容中当前可选的字体有:
 - 英文字体<br />
 -- **pumplain**<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/pumplain.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/pumplain.png)<br />
 -- **sanss**<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sanss.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sanss.png)<br />
 -- **sanssb**<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sanssb.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sanssb.png)<br />
 -- **sansso**<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sansso.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sansso.png)<br />
 -- **segoepr**<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/segoepr.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/segoepr.png)<br />
 -- **segoeprb**<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/segoeprb.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/segoeprb.png)<br />
 -- **showg**<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/showg.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/showg.png)<br />
 
 - 中文字体<br />
 -- **msyh**  (微软雅黑标准)<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyh.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyh.png)<br />
 -- **msyhbd**  (微软雅黑粗体)<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyhbd.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyhbd.png)<br />
 -- **msyhl**  (微软雅黑细体)<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyhl.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyhl.png)<br />
 -- **simhei**  (黑体)<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simhei.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simhei.png)<br />
 -- **simkai**  (楷体)<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simkai.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simkai.png)<br />
 -- **simli**  (隶书)<br />
-![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simli.png)
+![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simli.png)<br />
 
 
 ## Future
