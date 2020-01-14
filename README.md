@@ -103,126 +103,126 @@ const someFunc = async function(){
 > 返回的 `res` 对象的数据结构为: `{err, msg, data}`
 
 ### render([callback])
-> 渲染函数(仅前端)
-> 对拼接过程进行组合并进行渲染，返回数据将传递给回调函数 `callback`。
+> 渲染函数(仅前端)<br />
+> 对拼接过程进行组合并进行渲染，返回数据将传递给回调函数 `callback`。<br />
 > 返回的 `res` 对象的数据结构为: `{err, msg, data}`
 
 ### drawBackground({ width, height, bgcolor, isZoom=false, imgurl })
-> 绘制背景(纯色背景或图片背景，二选一)
-> 若 `imgurl` 有值，则为图片背景；
-> 上述条件满足时，若 `isZoom=true` 则会根据 `width` 和 `height`的值对图片进行宽高缩放。
-> 若 `imgurl` 为空，且 `bgcolor` 有值，则会根据 `width` 和 `height`的值生成纯色背景。
-> 若 `imgurl` 与 `imgurl` 都为空，则抛出异常。
-> <font color=red>注意：当前版本中所有的图片都必须是 weburl 地址，不支持本地图片直接上传拼接。</font>
-> **width** [number] 整体背景(画布)的宽度，单位 px
-> **height** [number] 整体背景(画布)的高度，单位 px
-> **bgcolor** [string] 背景颜色，仅支持16进制的RGB色值，如 `#000000` 代表黑色；`transparent`表示透明色。
-> **isZoom** [boolean] 是否缩放背景图, 仅当背景是图片时有效
+> 绘制背景(纯色背景或图片背景，二选一)<br />
+> 若 `imgurl` 有值，则为图片背景；<br />
+> 上述条件满足时，若 `isZoom=true` 则会根据 `width` 和 `height`的值对图片进行宽高缩放。<br />
+> 若 `imgurl` 为空，且 `bgcolor` 有值，则会根据 `width` 和 `height`的值生成纯色背景。<br />
+> 若 `imgurl` 与 `imgurl` 都为空，则抛出异常。<br />
+> <font color=red>注意：当前版本中所有的图片都必须是 weburl 地址，不支持本地图片直接上传拼接。</font><br />
+> **width** [number] 整体背景(画布)的宽度，单位 px<br />
+> **height** [number] 整体背景(画布)的高度，单位 px<br />
+> **bgcolor** [string] 背景颜色，仅支持16进制的RGB色值，如 `#000000` 代表黑色；`transparent`表示透明色。<br />
+> **isZoom** [boolean] 是否缩放背景图, 仅当背景是图片时有效<br />
 > **imgurl** [string] 图片的 url 地址,与 `bgcolor` 属性至少二选一
 
 ### drawImage({width, height, left, top, imgurl})
-> 绘制一张图片
-> **width** [number] 图片的宽度，单位 px
-> **height** [number] 图片的高度，单位 px
-> **left** [number] 图片的 x 轴坐标，单位 px
-> **top** [number] 图片的 y 轴坐标，单位 px
+> 绘制一张图片<br />
+> **width** [number] 图片的宽度，单位 px<br />
+> **height** [number] 图片的高度，单位 px<br />
+> **left** [number] 图片的 x 轴坐标，单位 px<br />
+> **top** [number] 图片的 y 轴坐标，单位 px<br />
 > **imgurl** [string] 图片的 url 地址
 
 ### drawText({top, left, text, color, fontsize, family, borderColor, borderSize, gravity})
-> 绘制一段文本
-> **left** [number] 文本的 x 轴坐标，单位 px
-> **top** [number] 文本的 y 轴坐标，单位 px
-> **text** [string] 文本内容
-> **color** [string] 文本颜色，仅支持16进制的RGB色值，如 `#000000` 代表黑色
-> **fontsize** [number] 文本字体大小，单位 px
-> **family** [string] (可选) 文本字体，默认 **"msyh"** (微软雅黑)。变更其他字体请阅读后面的 **Fonts** 部分内容。
-> **borderColor** [string] 文本边框颜色，仅支持16进制的RGB色值
-> **borderSize** [number] 文本边框宽度，单位 px
+> 绘制一段文本<br />
+> **left** [number] 文本的 x 轴坐标，单位 px<br />
+> **top** [number] 文本的 y 轴坐标，单位 px<br />
+> **text** [string] 文本内容<br />
+> **color** [string] 文本颜色，仅支持16进制的RGB色值，如 `#000000` 代表黑色<br />
+> **fontsize** [number] 文本字体大小，单位 px<br />
+> **family** [string] (可选) 文本字体，默认 **"msyh"** (微软雅黑)。变更其他字体请阅读后面的 **Fonts** 部分内容。<br />
+> **borderColor** [string] 文本边框颜色，仅支持16进制的RGB色值<br />
+> **borderSize** [number] 文本边框宽度，单位 px<br />
 > **gravity** [string] (可选) 文本位置重心，可选值有：`NorthWest`、`North`、`NorthEast`、`West`、`Center`、`East`、`SouthWest`、`South`、`SouthEast`
 
 ### drawRectangle({width, height, x, y, widthCorner, heightCorner, fillColor, borderSize, borderColor})
-> 绘制一个矩形
-> **width** [number] 矩形的宽度，单位 px
-> **height** [number] 矩形的高度，单位 px
-> **x** [number] 矩形位置的 x 轴坐标，单位 px
-> **y** [number] 矩形位置的 y 轴坐标，单位 px
-> **widthCorner** [number] 矩形的圆角，单位 px
-> **heightCorner** [number] 矩形的圆角，单位 px
-> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。
-> **borderSize** [number] 边框宽度，单位 px
+> 绘制一个矩形<br />
+> **width** [number] 矩形的宽度，单位 px<br />
+> **height** [number] 矩形的高度，单位 px<br />
+> **x** [number] 矩形位置的 x 轴坐标，单位 px<br />
+> **y** [number] 矩形位置的 y 轴坐标，单位 px<br />
+> **widthCorner** [number] 矩形的圆角，单位 px<br />
+> **heightCorner** [number] 矩形的圆角，单位 px<br />
+> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。<br />
+> **borderSize** [number] 边框宽度，单位 px<br />
 > **borderColor** [string] 形状边框颜色，仅支持16进制的RGB色值
 
 ### drawCircle({x, y, r, fillColor, borderSize, borderColor})
-> 绘制一个圆形
-> <font color=red>注意：圆形的 x 和 y 表示中心点坐标, 而非左上角坐标。</font>
-> **x** [number] 圆形中心位置的 x 轴坐标，单位 px
-> **y** [number] 圆形中心位置的 y 轴坐标，单位 px
-> **r** [number] 圆形的半径，单位 px
-> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。
-> **borderSize** [number] 边框宽度，单位 px
+> 绘制一个圆形<br />
+> <font color=red>注意：圆形的 x 和 y 表示中心点坐标, 而非左上角坐标。</font><br />
+> **x** [number] 圆形中心位置的 x 轴坐标，单位 px<br />
+> **y** [number] 圆形中心位置的 y 轴坐标，单位 px<br />
+> **r** [number] 圆形的半径，单位 px<br />
+> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。<br />
+> **borderSize** [number] 边框宽度，单位 px<br />
 > **borderColor** [string] 形状边框颜色，仅支持16进制的RGB色值
 
 ### drawEllipse({x0, y0, rx, ry, a0, a1, fillColor, borderSize, borderColor})
-> 绘制一个椭圆
-> <font color=red>注意：圆形的 x 和 y 表示中心点坐标, 而非左上角坐标。</font>
-> **x0** [number] 圆形中心位置的 x0 轴坐标，单位 px
-> **y0** [number] 圆形中心位置的 y0 轴坐标，单位 px
-> **rx** [number] x 轴的半径，单位 px
-> **ry** [number] y 轴的半径，单位 px
-> **a0** [number] 绘制的开始角度，单位 px
-> **a1** [number] 绘制的结束角度，单位 px
-> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。
-> **borderSize** [number] 边框宽度，单位 px
+> 绘制一个椭圆<br />
+> <font color=red>注意：圆形的 x 和 y 表示中心点坐标, 而非左上角坐标。</font><br />
+> **x0** [number] 圆形中心位置的 x0 轴坐标，单位 px<br />
+> **y0** [number] 圆形中心位置的 y0 轴坐标，单位 px<br />
+> **rx** [number] x 轴的半径，单位 px<br />
+> **ry** [number] y 轴的半径，单位 px<br />
+> **a0** [number] 绘制的开始角度，单位 px<br />
+> **a1** [number] 绘制的结束角度，单位 px<br />
+> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。<br />
+> **borderSize** [number] 边框宽度，单位 px<br />
 > **borderColor** [string] 形状边框颜色，仅支持16进制的RGB色值
 
 ### drawPolygon({points, fillColor, borderSize, borderColor})
-> 绘制一个多边形
-> **points** [Array<{x,y}>] points是一个坐标点的集合，集合中每一个对象都由 `x` 和 `y` 属性来描述点坐标。集合中，末尾的坐标会与数组首位的坐标自动闭合。
-> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。
-> **borderSize** [number] 边框宽度，单位 px
+> 绘制一个多边形<br />
+> **points** [Array<{x,y}>] points是一个坐标点的集合，集合中每一个对象都由 `x` 和 `y` 属性来描述点坐标。集合中，末尾的坐标会与数组首位的坐标自动闭合。<br />
+> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。<br />
+> **borderSize** [number] 边框宽度，单位 px<br />
 > **borderColor** [string] 形状边框颜色，仅支持16进制的RGB色值
 
 
 ### drawLine({x0, y0, x1, y1, fillColor, borderSize, borderColor})
-> 绘制一个线条
-> **x0** [number] 线条开始位置的 x 轴坐标，单位 px
-> **y0** [number] 线条开始位置的 y 轴坐标，单位 px
-> **x1** [number] 线条结束位置的 x 轴坐标，单位 px
-> **y1** [number] 线条结束位置的 y 轴坐标，单位 px
-> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。
-> **borderSize** [number] 边框宽度，单位 px
+> 绘制一个线条<br />
+> **x0** [number] 线条开始位置的 x 轴坐标，单位 px<br />
+> **y0** [number] 线条开始位置的 y 轴坐标，单位 px<br />
+> **x1** [number] 线条结束位置的 x 轴坐标，单位 px<br />
+> **y1** [number] 线条结束位置的 y 轴坐标，单位 px<br />
+> **fillColor** [string] 形状填充颜色，仅支持16进制的RGB色值；`transparent`表示透明色。<br />
+> **borderSize** [number] 边框宽度，单位 px<br />
 > **borderColor** [string] 形状边框颜色，仅支持16进制的RGB色值
 
 ## Fonts
 文本内容中当前可选的字体有:
-- 英文字体
--- **pumplain**
+- 英文字体<br />
+-- **pumplain**<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/pumplain.png)
--- **sanss**
+-- **sanss**<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sanss.png)
--- **sanssb**
+-- **sanssb**<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sanssb.png)
--- **sansso**
+-- **sansso**<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/sansso.png)
--- **segoepr**
+-- **segoepr**<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/segoepr.png)
--- **segoeprb**
+-- **segoeprb**<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/segoeprb.png)
--- **showg**
+-- **showg**<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/en/showg.png)
 
-- 中文字体
--- **msyh**  (微软雅黑标准)
+- 中文字体<br />
+-- **msyh**  (微软雅黑标准)<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyh.png)
--- **msyhbd**  (微软雅黑粗体)
+-- **msyhbd**  (微软雅黑粗体)<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyhbd.png)
--- **msyhl**  (微软雅黑细体)
+-- **msyhl**  (微软雅黑细体)<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/msyhl.png)
--- **simhei**  (黑体)
+-- **simhei**  (黑体)<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simhei.png)
--- **simkai**  (楷体)
+-- **simkai**  (楷体)<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simkai.png)
--- **simli**  (隶书)
+-- **simli**  (隶书)<br />
 ![](https://sheu-huabei2.oss-cn-beijing.aliyuncs.com/puzzles_demo/zh/simli.png)
 
 
