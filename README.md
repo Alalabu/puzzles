@@ -57,7 +57,7 @@ const someFunc = async function(){
   if(!res.err){
     const fs = require('fs');
     const wres = await fs.writeFileSync('./demo01-first.png', new Buffer(res.data.data));
-    console.log('写入文件:', wres);
+    console.log('写入文件结果:', wres);
   }
 };
 ```
@@ -94,12 +94,12 @@ const someFunc = async function(){
 
 ## API
 ### constructor({dataType})
-> 构造函数
+> 构造函数<br />
 > dataType [string] 描述响应时接收的数据类型，可选值为：base64、buffer。
 
 ### render()
-> 渲染函数(仅服务器端)
-> 对拼接过程进行组合并进行渲染，返回值是一个 `Promise`。
+> 渲染函数(仅服务器端)<br />
+> 对拼接过程进行组合并进行渲染，返回值是一个 `Promise`。<br />
 > 返回的 `res` 对象的数据结构为: `{err, msg, data}`
 
 ### render([callback])
