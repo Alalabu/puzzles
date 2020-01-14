@@ -1,0 +1,30 @@
+{
+  "name": "puzzles",
+  "version": "0.0.1",
+  "description": "The tool is used to stitch together multiple images, words or shapes to make them into one image.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alalabu/puzzles.git"
+  },
+  "keywords": [
+    "image",
+    "images",
+    "puzzles",
+    "picture",
+    "words"
+  ],
+  "author": "Alalabu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alalabu/puzzles.git/issues"
+  },
+  "homepage": "https://github.com/Alalabu/puzzles.git#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "request": "^2.88.0"
+  }
+}
